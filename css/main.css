@@ -115,12 +115,15 @@ body {
   top: -2em;
   width: 4.6em;
   z-index: 1;
-
   background-color: #000;
   border-radius: 6px;
-  opacity: 0;
-
+  opacity: 100;
   text-align: center;
+}
+
+.chart__item:hover .chart__count {
+  top: -4em;
+  transition: 500ms linear;
 }
 
 .chart__count::after {
@@ -131,7 +134,6 @@ body {
   margin-left: 50%;
   position: absolute;
   width: 0;
-
   border-left: 10px solid transparent;
   border-right: 10px solid transparent;
   border-top: 10px solid #000;
