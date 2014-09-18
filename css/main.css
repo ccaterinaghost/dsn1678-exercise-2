@@ -61,6 +61,10 @@ body {
   background-color: rgba(204, 204, 204, 0);
 }
 
+.chart__item:hover{
+  background-color: rgba(204, 204, 204, .7);
+}
+
 .chart__link,
 .chart__link:link,
 .chart__link:visited {
