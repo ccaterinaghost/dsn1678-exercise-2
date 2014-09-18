@@ -57,7 +57,6 @@ body {
   margin: 0 0.5%;
   position: relative;
   width: 7.3%;
-
   background-color: rgba(204, 204, 204, 0);
 }
 
@@ -78,8 +77,12 @@ body {
   bottom: -1.7em;
   position: absolute;
   width: 100%;
-
+  
   text-align: center;
+}
+
+.chart__label:hover {
+  color: white;
 }
 
 .chart__bar-wrap {
@@ -94,8 +97,13 @@ body {
   position: absolute;
   right: 0;
   top: 0;
-
+  transition: background color 1000ms linear, color 1000ms linear;
   background-color: rgba(127, 219, 255, 0.6);
+}
+
+.chart__bar: hover{
+  background-color: rgba(127, 219, 255, 1);
+
 }
 
 .chart__count {
