@@ -91,6 +91,11 @@ body {
   width: 100%;
 }
 
+@-webkit-keyframes chart__bar {
+  0% { top:100%; }
+  100% { top:0%;}
+}
+
 .chart__bar {
   bottom: 0;
   left: 0;
@@ -99,9 +104,13 @@ body {
   top: 0;
   transition: background color 1000ms linear, color 1000ms linear;
   background-color: rgba(127, 219, 255, 0.6);
+  -webkit-animation: chart__bar 500ms linear;
+
 }
 
-.chart__bar: hover{
+
+
+.chart__bar:hover{
   background-color: rgba(127, 219, 255, 1);
 
 }
