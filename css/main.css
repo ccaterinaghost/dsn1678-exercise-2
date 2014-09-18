@@ -117,13 +117,14 @@ body {
   z-index: 1;
   background-color: #000;
   border-radius: 6px;
-  opacity: 100;
+  opacity: 0;
   text-align: center;
+  transition: all 1000ms linear;
 }
 
 .chart__item:hover .chart__count {
   top: -4em;
-  transition: 500ms linear;
+  opacity: 100;
 }
 
 .chart__count::after {
